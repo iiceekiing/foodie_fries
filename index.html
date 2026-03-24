@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kryssie Kitchen</title>
+  <link rel="stylesheet" href="src/output.css">
+  <style>
+    
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .scrolling-wrapper {
+      display: flex;
+      gap: 2rem;
+      width: max-content;
+      animation: scroll 30s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-pink-100 flex flex-col min-h-screen">
+
+  
+  <nav class="bg-yellow-100 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-3xl text-pink-700 font-bold tracking-wider text-gray-900">foodie fries</h1>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="#" class="hover:text-pink-400 transition">Home</a></li>
+        <li><a href="food_cards-page.html" class="hover:text-pink-400 transition">Menu</a></li>
+        <li><a href="#" class="hover:text-pink-400 transition">About</a></li>
+        <li><a href="contact_page.html" class="hover:text-pink-700 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <section class="py-12 overflow-hidden">
+    <div class="container mx-auto">
+      <div class="scrolling-wrapper">
+        
+
+
+
+
+
+
+
+
+        <div class="bg-yellow-100 rounded-xl shadow-lg w-[390px] flex-shrink-0 hover:scale-105 transform transition">
+          <img src="img/african chicken.jpg" alt="Food 1" class="w-full h-96 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">african chicken</h3>
+            <p class="text-gray-600 mb-2">a very delicious and spicy chicken</p>
+            <p class="text-pink-500 font-bold">₦5,000</p>
+          </div>
+        </div>
+
+        <div class="bg-yellow-100 rounded-xl shadow-lg w-[390px] flex-shrink-0 hover:scale-105 transform transition">
+          <img src="img/assorted stew.png" alt="Food 2" class="w-full h-96 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">fried stew</h3>
+            <p class="text-gray-600 mb-2">a very delicious and hearty stew</p>
+            <p class="text-pink-500 font-bold">₦4,500</p>
+          </div>
+        </div>
+
+        <div class="bg-yellow-100 rounded-xl shadow-lg w-[390px] flex-shrink-0 hover:scale-105 transform transition">
+          <img src="img/bugger and coke.png" alt="Food 3" class="w-full h-96 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">burger and coke</h3>
+            <p class="text-gray-600 mb-2">a very delicious and refreshing combo</p>
+            <p class="text-pink-500 font-bold">₦6,000</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Duplicate to make continuous scrolling smooth -->
+        <div class="bg-yellow-100 rounded-xl shadow-lg w-[390px] flex-shrink-0 hover:scale-105 transform transition">
+          <img src="img/combo.webp" alt="Food 4" class="w-full h-96 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">coke and fried rice</h3>
+            <p class="text-gray-600 mb-2">a very delicious and refreshing combo</p>
+            <p class="text-pink-500 font-bold">₦5,500</p>
+          </div>
+        </div>
+
+        <div class="bg-yellow-100 rounded-xl shadow-lg w-[390px] flex-shrink-0 hover:scale-105 transform transition">
+          <img src="img/lovers combo pack.png" alt="Food 5" class="w-full h-96 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Food Name</h3>
+            <p class="text-gray-600 mb-2">Short description</p>
+            <p class="text-pink-500 font-bold">₦5,700</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+
+  <section class="bg-yellow-100 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Opening Hours</h2>
+      <p class="text-lg mb-2">Monday - Friday: 9:00 AM - 10:00 PM</p>
+      <p class="text-lg mb-2">Saturday: 10:00 AM - 11:00 PM</p>
+      <p class="text-lg mb-2">Sunday: Closed</p>
+    </div>
+  </section>
+
+
+
+
+  
+  <footer class="bg-pink-100 text-gray-900 text-center p-6 mt-auto">
+    <p>&copy; 2026 foodie fries. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
