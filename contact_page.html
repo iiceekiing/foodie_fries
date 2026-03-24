@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Foodie Fries</title>
+
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#ffebf1] font-sans">
+
+  <nav class="flex justify-between items-center p-6 bg-white shadow">
+    <h1 class="text-xl font-bold text-[#990038]">Foodie Fries</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="text-gray-600 hover:text-[#990038]">Home</a>
+      <a href="menu.html" class="text-gray-600 hover:text-[#990038]">Menu</a>
+      <a href="about.html" class="text-gray-600 hover:text-[#990038]">About</a>
+      <a href="contact.html" class="text-[#990038] font-semibold">Contact</a>
+    </div>
+  </nav>
+
+  <section class="text-center py-16">
+    <h2 class="text-4xl font-bold text-[#990038] mb-4">Contact Us</h2>
+    <p class="text-gray-600">We'd love to hear from you.</p>
+  </section>
+
+  <section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 p-6">
+
+    <div class="bg-white p-8 rounded-2xl shadow">
+      <h3 class="text-2xl font-semibold mb-6 text-[#990038]">Send a Message</h3>
+
+      <form id="contactForm" class="space-y-4">
+        <input type="text" placeholder="Your Name"
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#99c9ff]" required>
+
+        <input type="email" placeholder="Your Email"
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#99c9ff]" required>
+
+        <textarea placeholder="Your Message" rows="4"
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#99c9ff]" required></textarea>
+
+        <button class="bg-[#990038] text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition">
+          Send Message
+        </button>
+      </form>
+
+      <p id="successMsg" class="text-green-600 mt-4 hidden">
+        Message sent successfully!
+      </p>
+    </div>
+
+    <div class="space-y-6">
+      <div class="bg-[#fff8e4] p-6 rounded-2xl shadow">
+        <h4 class="font-semibold text-lg mb-2">Opening Hours</h4>
+        <p class="text-gray-600">Mon - Fri: 9AM - 10PM</p>
+        <p class="text-gray-600">Sat - Sun: 10AM - 11PM</p>
+      </div>
+
+      <div class="bg-[#eaf7df] p-6 rounded-2xl shadow">
+        <h4 class="font-semibold text-lg mb-2">Our Location</h4>
+        <iframe class="w-full h-48 rounded-lg"
+          src="https://maps.google.com/maps?q=abuja&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      msg.classList.remove('hidden');
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
